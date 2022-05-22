@@ -6,7 +6,7 @@ module.exports = {
       host : 'erp.rpdgroup.deploy',
       ref  : `prod_15`,
       repo : 'git@github.com:newmizanur/odoo.git',
-      path : '/home/ubuntu/webapps/odoo',
+      path : '/opt/odoo/webapps/odoo',
       ssh_options: "StrictHostKeyChecking=no",
       fetch: 'fast',
       'post-deploy' : [
@@ -27,3 +27,7 @@ module.exports = {
 
 // For Error: pg_config executable not found, run -> sudo apt-get install libpq-dev
 // To install wkhtmltopdf -> sudo apt-get install wkhtmltopdf
+
+//To add permission to ubuntu to location /opt/odoo -> https://askubuntu.com/questions/642744/read-write-permissions-in-opt-directory
+
+// ERROR: Failed building wheel for python-ldap -> https://www.odoo.com/fr_FR/forum/aide-1/i-m-using-a-python-3-6-jessie-docker-image-and-try-to-execute-bash-pip3-install-r-requirements-txt-and-send-the-next-error-can-someone-help-me-please-137415
