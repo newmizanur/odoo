@@ -15,6 +15,7 @@
 # Jeffery CHEN <jeffery9@gmail.com>, 2022
 # Tony Peng <umingpeng@gmail.com>, 2022
 # Dong <dong@freshoo.cn>, 2022
+# 智能科技奇客罗方 <alanljj@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
@@ -22,7 +23,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-18 09:52+0000\n"
 "PO-Revision-Date: 2021-09-14 12:18+0000\n"
-"Last-Translator: Dong <dong@freshoo.cn>, 2022\n"
+"Last-Translator: 智能科技奇客罗方 <alanljj@gmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -7535,6 +7536,13 @@ msgid "Journal Entry Date"
 msgstr "日记帐分录日期"
 
 #. module: account
+#. openerp-web
+#: code:addons/account/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Journal Entry Info"
+msgstr "日记帐分录信息"
+
+#. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_print_journal__sort_selection__move_name
 #: model_terms:ir.ui.view,arch_db:account.report_journal
 msgid "Journal Entry Number"
@@ -7652,6 +7660,13 @@ msgstr "公司日记帐的会计期初分录已过账."
 #: model:ir.model.fields,help:account.field_account_automatic_entry_wizard__journal_id
 msgid "Journal where to create the entry."
 msgstr "在日记帐中创建分录."
+
+#. module: account
+#. openerp-web
+#: code:addons/account/static/src/xml/account_payment.xml:0
+#, python-format
+msgid "Journal:"
+msgstr "日记账："
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_journal_form
@@ -15851,6 +15866,12 @@ msgstr "例如：库存"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid ""
+"for this customer. You can allocate them to mark this credit note as paid."
+msgstr "对于这个客户，你可以将他们标记已支付应收凭单。"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "for this customer. You can allocate them to mark this invoice as paid."
 msgstr "对于这个客户，你可以将它们分配为标记此应收凭单已支付."
 
@@ -15858,6 +15879,12 @@ msgstr "对于这个客户，你可以将它们分配为标记此应收凭单已
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "for this vendor. You can allocate them to mark this bill as paid."
 msgstr "此供应商.您可以分配它们以将此帐单标记为已付."
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid ""
+"for this vendor. You can allocate them to mark this credit note as paid."
+msgstr "对于此供应商.您可以将他们标记为已支付帐单。"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_position_form
@@ -15934,13 +15961,13 @@ msgstr "于"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
-msgid "outstanding debits"
-msgstr "未结借方"
+msgid "outstanding credits"
+msgstr "未结贷方"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
-msgid "outstanding payments"
-msgstr "未结付款"
+msgid "outstanding debits"
+msgstr "未结借方"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_invoice_report__payment_state__paid

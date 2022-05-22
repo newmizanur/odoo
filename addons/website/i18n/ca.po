@@ -8355,7 +8355,7 @@ msgstr "Desplaça a dalt"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Scroll Top Button"
-msgstr ""
+msgstr "Desplaça el botó superior"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -9626,6 +9626,12 @@ msgstr "Aquest missatge ha estat publicat en el seu lloc web."
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
 msgid "This page"
 msgstr "Aquesta pàgina"
+
+#. module: website
+#: code:addons/website/models/website_visitor.py:0
+#, python-format
+msgid "This operator is not supported"
+msgstr "Aquest operador no és compatible"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.page_404
