@@ -4,7 +4,7 @@ module.exports = {
     odoo : {
       user : 'ubuntu',
       host : 'erp.rpdgroup.deploy',
-      ref  : `prod_15`,
+      ref  : `origin/prod_15`,
       repo : 'git@github.com:newmizanur/odoo.git',
       path : '/opt/odoo/webapps/odoo',
       ssh_options: "StrictHostKeyChecking=no",
