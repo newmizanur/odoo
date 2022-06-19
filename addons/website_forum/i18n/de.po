@@ -1473,7 +1473,7 @@ msgstr ""
 #. module: website_forum
 #: model:ir.model.fields,help:website_forum.field_gamification_challenge__challenge_category
 msgid "Define the visibility of the challenge through menus"
-msgstr "Legen Sie fest, in welchen Menüs die Zielvorgabe sichtbar sein soll"
+msgstr "Legen Sie fest, in welchen Menüs die Challenge sichtbar sein soll"
 
 #. module: website_forum
 #: model_terms:ir.ui.view,arch_db:website_forum.post_answers
@@ -2908,7 +2908,7 @@ msgstr "Lesen: #{question.name}"
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post__closed_reason_id
 msgid "Reason"
-msgstr "Grund"
+msgstr "Begründung"
 
 #. module: website_forum
 #: model:ir.model.fields,field_description:website_forum.field_forum_post_reason__reason_type

@@ -243,11 +243,11 @@ class AccountEdiFormat(models.Model):
     def _is_fattura_pa(self, filename, tree):
         return self.code == 'fattura_pa' and self._check_filename_is_fattura_pa(filename)
 
-    def _create_invoice_from_xml_tree(self, filename, tree):
+    def _create_invoice_from_xml_tree(self, filename, tree, journal=None):
         self.ensure_one()
         if self._is_fattura_pa(filename, tree):
             return self._import_fattura_pa(tree, self.env['account.move'])
-        return super()._create_invoice_from_xml_tree(filename, tree)
+        return super()._create_invoice_from_xml_tree(filename, tree, journal=journal)
 
     def _update_invoice_from_xml_tree(self, filename, tree, invoice):
         self.ensure_one()
@@ -452,10 +452,13 @@ class AccountEdiFormat(models.Model):
                         if invoice_form.partner_id and invoice_form.partner_id.commercial_partner_id:
                             bank = self.env['res.partner.bank'].search([
                                 ('acc_number', '=', elements[0].text),
-                                ('partner_id.id', '=', invoice_form.partner_id.commercial_partner_id.id)
-                                ])
+                                ('partner_id', '=', invoice_form.partner_id.commercial_partner_id.id),
+                                ('company_id', 'in', [invoice_form.company_id.id, False])
+                            ], order='company_id', limit=1)
                         else:
-                            bank = self.env['res.partner.bank'].search([('acc_number', '=', elements[0].text)])
+                            bank = self.env['res.partner.bank'].search([
+                                ('acc_number', '=', elements[0].text), ('company_id', 'in', [invoice_form.company_id.id, False])
+                            ], order='company_id', limit=1)
                         if bank:
                             invoice_form.partner_bank_id = bank
                         else:
