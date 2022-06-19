@@ -8,10 +8,8 @@
 # Ahmed Aly <ahmed.aly@datenpol.at>, 2021
 # Christian Kubicki, 2021
 # Raymond Vetter, 2021
-# Robert Förster <hello@suppliot.eu>, 2021
 # Patrick Heuel <patrick.heuel@odoo-bs.com>, 2022
 # Martin Trigaux, 2022
-# EugenBrodskiSAMSAIT <eugen.brodski@samsa-it.de>, 2022
 # Chris Egal <sodaswed@web.de>, 2022
 # Friederike Fasterling-Nesselbosch, 2022
 # 
@@ -62,6 +60,8 @@ msgid ""
 "%(email)s is not recognized as a valid email. This is required to create a "
 "new customer."
 msgstr ""
+"%(email)s wird nicht als gültige E-Mail erkannt. Dies ist erforderlich, um "
+"einen neuen Kunden anzulegen."
 
 #. module: mail
 #: code:addons/mail/wizard/mail_wizard_invite.py:0
@@ -1112,7 +1112,7 @@ msgstr "# Anhänge"
 #: code:addons/mail/static/src/components/chatter_topbar/chatter_topbar.xml:0
 #, python-format
 msgid "Attachment counter loading..."
-msgstr ""
+msgstr "Anhangzähler laden..."
 
 #. module: mail
 #. openerp-web
@@ -2025,7 +2025,7 @@ msgstr "Frist"
 #: code:addons/mail/static/src/components/rtc_controller/rtc_controller.xml:0
 #, python-format
 msgid "Deafen"
-msgstr ""
+msgstr "Stummschalten"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.message_user_assigned
@@ -2154,7 +2154,7 @@ msgstr "Versand gescheitert"
 #: code:addons/mail/static/src/components/message/message.xml:0
 #, python-format
 msgid "Delivery failure"
-msgstr ""
+msgstr "Zustellungsfehler"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_channel__description
@@ -2249,7 +2249,7 @@ msgstr "Diskussion"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_users_settings_view_form
 msgid "Discuss sidebar"
-msgstr ""
+msgstr "Discuss Seitenleiste"
 
 #. module: mail
 #: model:ir.model,name:mail.model_mail_channel
@@ -2374,7 +2374,7 @@ msgstr "Fertig & Weiter starten"
 #: model_terms:ir.ui.view,arch_db:mail.mail_activity_view_form_popup
 #, python-format
 msgid "Done & Schedule Next"
-msgstr "Fertig und nächstes Element planen"
+msgstr "Fertig und nächsten Schritt planen"
 
 #. module: mail
 #. openerp-web
@@ -2457,7 +2457,7 @@ msgstr "Duplizierte E-Mail"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_users_settings__voice_active_duration
 msgid "Duration of voice activity in ms"
-msgstr ""
+msgstr "Dauer der Sprachaktivität in ms"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.email_template_form
@@ -2692,7 +2692,7 @@ msgstr "Nur Mitarbeiter"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_ir_model_fields__tracking
 msgid "Enable Ordered Tracking"
-msgstr ""
+msgstr "Aktivieren der Auftragsverfolgung"
 
 #. module: mail
 #. openerp-web
@@ -2869,7 +2869,7 @@ msgstr "Das Feld \"Mail Activity\" kann nicht auf \"False\" geändert werden."
 #: code:addons/mail/models/ir_model.py:0
 #, python-format
 msgid "Field \"Mail Blacklist\" cannot be changed to \"False\"."
-msgstr ""
+msgstr "Das Feld \"Mail Blacklist\" kann nicht auf \"False\" geändert werden."
 
 #. module: mail
 #: code:addons/mail/models/ir_model.py:0
@@ -3158,7 +3158,7 @@ msgstr "In Odoo bearbeiten"
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_resend_message__has_cancel
 msgid "Has Cancel"
-msgstr ""
+msgstr "Hat Stornierung"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.view_message_search
@@ -5760,7 +5760,7 @@ msgstr "Bereit zum Senden"
 #: model:ir.model.fields,field_description:mail.field_mail_blacklist_remove__reason
 #: model_terms:ir.ui.view,arch_db:mail.mail_blacklist_remove_view_form
 msgid "Reason"
-msgstr "Grund"
+msgstr "Begründung"
 
 #. module: mail
 #: model:ir.model.fields.selection,name:mail.selection__mail_mail__state__received
@@ -6171,7 +6171,7 @@ msgstr "Aktivität planen"
 #: code:addons/mail/static/src/xml/web_kanban_activity.xml:0
 #, python-format
 msgid "Schedule activities to help you get things done."
-msgstr "Planen Sie Aktivitäten um Dinge zu erledigen."
+msgstr "Planen Sie Aktivitäten für effizientes Arbeiten."
 
 #. module: mail
 #. openerp-web
@@ -7399,7 +7399,7 @@ msgstr "Grund für Entfernung aus Sperrliste: %s"
 #: code:addons/mail/static/src/components/rtc_controller/rtc_controller.xml:0
 #, python-format
 msgid "Undeafen"
-msgstr ""
+msgstr "Stummschaltung aufheben"
 
 #. module: mail
 #. openerp-web
@@ -7722,7 +7722,7 @@ msgstr "Ansichtstyp"
 #: code:addons/mail/static/src/components/attachment_image/attachment_image.xml:0
 #, python-format
 msgid "View image"
-msgstr ""
+msgstr "Bild ansehen"
 
 #. module: mail
 #. openerp-web
@@ -7742,7 +7742,7 @@ msgstr "Betrachter"
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.res_users_settings_view_form
 msgid "Voice"
-msgstr ""
+msgstr "Stimme"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_res_users_settings_volumes__volume
@@ -7892,7 +7892,7 @@ msgstr "Sie befinden sich im Kanal <b>#%s</b>."
 #: code:addons/mail/controllers/discuss.py:0
 #, python-format
 msgid "You are not allowed to upload an attachment here."
-msgstr ""
+msgstr "Sie sind nicht berechtigt, hier einen Anhang hochzuladen."
 
 #. module: mail
 #. openerp-web
@@ -8055,7 +8055,7 @@ msgstr "Sie: "
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_light
 #: model_terms:ir.ui.view,arch_db:mail.mail_notification_paynow
 msgid "Your"
-msgstr "Ihr(e)"
+msgstr "Ihr"
 
 #. module: mail
 #. openerp-web
