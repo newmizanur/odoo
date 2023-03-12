@@ -1,9 +1,12 @@
+let hostEnvName = getEnvName();
+if(!hostEnvName) hostEnvName = 'dev';
+const host = getHostName(hostEnvName);
 
 module.exports = {
   deploy : {
     odoo : {
       user : 'ubuntu',
-      host : 'erp.rpdgroup.deploy',
+      host : host,
       ref  : `origin/prod_15`,
       repo : 'git@github.com:newmizanur/odoo.git',
       path : '/opt/odoo/webapps/odoo',
@@ -16,9 +19,26 @@ module.exports = {
   }
 };
 
+function getEnvName(){
+  let index = process.argv.indexOf('--env');
+  if(index < 0) return;
+  return process.argv[index + 1];
+}
+
+function getHostName(environment) {
+
+  const devHosts = {
+    dev: 'dev-erp.rpdgroup.local',
+    prod: 'erp.rpdgroup.local',
+  };
+    
+  return devHosts[environment];
+}
+
 /*
 * Example commands:
-* pm2 deploy odoo
+* pm2 deploy odoo --force --env dev
+* pm2 deploy odoo --force --env prod
 * */
 
 //Installed by following articles, 
