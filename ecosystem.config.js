@@ -11,7 +11,7 @@ module.exports = {
       repo : 'git@github.com:newmizanur/odoo.git',
       path : '/opt/odoo/webapps/odoo',
       ssh_options: "StrictHostKeyChecking=no",
-      fetch: 'full',
+      fetch: 'fast',
       'post-deploy' : [
           'sudo systemctl restart odoo.service'
       ].join(' && ')
